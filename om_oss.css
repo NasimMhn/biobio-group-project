@@ -1,0 +1,83 @@
+.rubrik {
+  margin: auto;
+}
+
+.Om_Oss {
+  margin-top: 50px;
+  font-size: 22px;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+.jumbotron {
+  z-index: 2;
+  opacity: 0.8;
+  background-color: black;
+  margin-top: 50px;
+  border: 5px solid rgb(255, 255, 255);
+  height: 1200px;
+}
+
+body {
+  color: white;
+  background-image: url("assets/biorio.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+}
+
+.personalrubrik {
+  margin: auto;
+  padding-top: 5px;
+  font-size: 30px;
+}
+
+.container_personal {
+  border: gray 1px solid;
+  padding: 50px;
+  margin-top: 50px;
+  position: relative;
+  margin-bottom: 50px;
+  font-size: 22px;
+}
+
+.personalrubrik {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.container_kontakt {
+  border: gray 1px solid;
+  padding: 50px;
+  margin-top: 50px;
+}
+
+/* As soon as our website get to999 pixels we will display all rules in this line */
+
+@media screen and (max-width: 1200px) {
+  .jumbotron {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 959px) {
+  .container_personal {
+    text-align: center;
+  }
+}
+
+li {
+  font-size: 22px;
+}
+
+.container_personal a {
+  color: white;
+}
+
+a {
+  color: white;
+}

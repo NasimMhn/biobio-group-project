@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>BioBio - om oss</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,900&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+  <!--CSS Stylesheets-->
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="om_oss.css">
+
+</head>
+
+<body>
+  <!-- HEADER  & NAVBAR -->
+  <header>
+    <!-- NAVBAR (DESKTOP) -->
+    <nav id="main-nav">
+      <a href="#">Filmer</a>
+      <a href="#"> Boka </a>
+      <a href="om_oss.html"> Om oss </a>
+      <div class="logo">
+        <a href="index.html">
+          <img src="assets/popcorn.svg" alt="logo">
+          <h1>BioBio</h1>
+        </a>
+      </div>
+
+      <div class="city-dropdown">
+        <a onclick="dropdownCities()" class="city-dropbtn">Stockholm</a>
+        <div id="myCityDropdown" class="city-dropdown-content">
+          <a href="#">Göteborg</a>
+          <a href="#">Malmö</a>
+          <a href="#">Uppsala</a>
+        </div>
+      </div>
+
+      <div class="log-in">
+        <div class="login-dropdown">
+          <a onclick="dropdownLogin()" class="login-dropbtn">
+            <img src="assets/account.svg" alt="logga in">
+            Logga in
+          </a>
+          <div id="myLoginDropdown" class="login-dropdown-content">
+            <div class="login-box">
+              <input type="text" placeholder="E-post" />
+              <input type="text" placeholder="Lösenord" />
+              <a href="#"><span>Glömt lösenord?</span></a>
+              <button class="login-btn"> Logga in </button>
+              <div class="form-bottom">
+                <p style="font-size: 17px; color: #333;">Inget konto? </p>
+                <a href="#">
+                  <p style="color: #ff0000; font-size: 15px;">Bli medlem</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Search icon -->
+      <div class="search-box">
+        <svg onClick="openSearch()" width="25" height="25" viewBox="0 0 42 40" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path id="search-btn"
+            d="M41.2571 36.5725L31.2156 27.108C33.7047 24.2478 35.2049 20.5841 35.2049 16.591C35.2049 7.43181 27.32 0 17.6025 0C7.87636 0 0 7.43181 0 16.591C0 25.7502 7.87636 33.182 17.6025 33.182C21.839 33.182 25.7175 31.776 28.7521 29.43L38.7936 38.8865C39.4755 39.5292 40.5752 39.5292 41.2571 38.8865C41.939 38.2517 41.939 37.2073 41.2571 36.5725ZM17.6025 29.8799C9.81987 29.8799 3.49492 23.9184 3.49492 16.591C3.49492 9.26365 9.81987 3.2941 17.6025 3.2941C25.3765 3.2941 31.71 9.26365 31.71 16.591C31.71 23.9184 25.3765 29.8799 17.6025 29.8799Z"
+            fill="#fff" />
+        </svg>
+      </div>
+    </nav>
+
+
+    <!-- HAMBURGER (MOBILE) -->
+    <div id="hamburger" onClick="openHamburger()" class="hamburger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div id="hamburger-menu">
+      <span>
+        <a href="#">Filmer</a>
+      </span>
+      <span>
+        <a href="#"> Boka </a>
+      </span>
+      <span>
+        <a href="#"> Om oss </a>
+      </span>
+      <span>
+        <a href="#"> Logga in </a>
+      </span>
+      <span>
+        <a href="#"> Biografer</a>
+      </span>
+      <span>
+        <a href="#">Nyheter</a>
+      </span>
+      <span>
+        <a href="#">Medlemskap</a>
+      </span>
+      <span>
+        <a href="#">Event</a>
+      </span>
+    </div>
+
+    <!-- SEARCH BAR -->
+    <nav id="search-nav">
+      <div class="src-icon">
+        <svg onClick="searchClick()" width="25" height="25" viewBox="0 0 42 40" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M41.2571 36.5725L31.2156 27.108C33.7047 24.2478 35.2049 20.5841 35.2049 16.591C35.2049 7.43181 27.32 0 17.6025 0C7.87636 0 0 7.43181 0 16.591C0 25.7502 7.87636 33.182 17.6025 33.182C21.839 33.182 25.7175 31.776 28.7521 29.43L38.7936 38.8865C39.4755 39.5292 40.5752 39.5292 41.2571 38.8865C41.939 38.2517 41.939 37.2073 41.2571 36.5725ZM17.6025 29.8799C9.81987 29.8799 3.49492 23.9184 3.49492 16.591C3.49492 9.26365 9.81987 3.2941 17.6025 3.2941C25.3765 3.2941 31.71 9.26365 31.71 16.591C31.71 23.9184 25.3765 29.8799 17.6025 29.8799Z"
+            fill="#fff" />
+        </svg>
+      </div>
+      <input id="search-input" type="text" placeholder="Sök på filmer, genres etc. " />
+      <button class="close-btn" onClick="closeSearch()">&#10005; </button>
+    </nav>
+  </header>
+
+  <!-- MAIN CONTENT-->
+  <main>
+    <div class="container">
+      <div class="jumbotron">
+        <div class="row">
+          <div class="rubrik">
+            <h1>Välkommen till BioBio</h1>
+          </div>
+          <div class="container">
+            <hr>
+            <div class="Om_Oss">Bio Rio är en biograf med egen bistro och bar i Hornstull. Rio visar bra film från hela
+              världen och har ett brett utbud för alla intressen och åldrar. Premiärfilmer blandas med liveoperor,
+              filmfrukost, filmklubbar, barnfilm och Sveriges första biobar, biografen har permanent alkoholtillstånd i
+              salongen så du både kan äta och dricka gott till filmen. Bio Rio är en av Stockholms få kvarlevande
+              singelbiografer från 1940-talet. Miljön är unikt bevarad och bidrag har emottagits både från Kung Carl XVI
+              Gustaf och Länsstyrelsen i syfte att restaurera och återskapa biografens orginalskick. Biografen invidges
+              1943 och ritades av Albin Stark. </div>
+            <div class="container_kontakt">
+
+              <div class="row">
+                <div class="col">
+
+                  <ul style="list-style-type: none;">
+                    <h2>Adress</h2>
+                    <li>BioBio</li>
+                    <li>BioBioVägen 25</li>
+                    <li>254 31 Stockholm</li>
+                    <li><a href="url">Vägbeskrivning (Google maps)</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <ul style="list-style-type: none;">
+                    <h2>Öppettider</h2>
+                    <li>Måndag 9-18</li>
+                    <li>Tisdag 9-18</li>
+                    <li>Onsdag 9-18</li>
+                    <li>Torsdag 9-18</li>
+                    <li>Fredag 9-18</li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <ul style="list-style-type: none;">
+                    <h2>Kontakta Oss</h2>
+                    <li>Telefon:</li>
+                    <li>08 - 123 123 123</li>
+                    <li>Telefonen är bemannad under bistrons öppettider.</li>
+                    <li>Email: <a href="url">BioBio@gmail.com</a></li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+            <div class="container_personal">
+              <div class=row>
+                <h1 class="personalrubrik">Personal</h1>
+              </div>
+
+              <div class="row">
+
+                <div class="col">Patrik Johansson<br>08 - 123 123 123<a href="url"><br>BioBio@gmail.com</a></div>
+                <div class="col">Patrik Johansson<br>08 - 123 123 123<a href="url"><br>BioBio@gmail.com</a></div>
+                <div class="col">Patrik Johansson<br>08 - 123 123 123<a href="url"><br>BioBio@gmail.com</a></div>
+                <div class="col">Patrik Johansson<br>08 - 123 123 123<a href="url"><br>BioBio@gmail.com</a></div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-wrapper">
+      <div class="foo">
+        <h5>BioBio</h5>
+        <span>Kontakta oss</span>
+        <span>Biljetter</span>
+        <span>Filmer & trailers</span>
+        <span>Nyheter</span>
+      </div>
+      <div class="foo-icon-container">
+        <div class="social-media">
+          <img src="assets/facebook.svg" style="height: 50px; width: 50px;">
+          <img src="assets/instagram.svg" style="height: 50px; width: 50px;">
+          <img src="assets/whatsapp.svg" style="height: 50px; width: 50px;">
+        </div>
+        <div class="newsletter">
+          <span style="margin-bottom: 0px; color:#FFD6D2;">Nyhetsbrev</span>
+          <input class="email-input" placeholder="email@adress.com" type="email">
+          <button> Registrera </button>
+        </div>
+        <div class="euro-cinema">
+          <a href="https://www.europa-cinemas.org/en">
+            <img src="assets/europa-cinema.jpg">
+          </a>
+        </div>
+        <div class="copy-right">
+          <span>Blitz Solution AB &#9400; 2019</span>
+        </div>
+      </div>
+      <div class="foo">
+        <h5>Kundservice</h5>
+        <span>Logga in</span>
+        <span>Bli medlem</span>
+        <span>FAQ</span>
+        <span>Presentkort</span>
+      </div>
+
+    </div>
+
+  </footer>
+
+  <!-- JAVASCRIPTS -->
+  <script src="./menu.js"></script>
+  <script src="./hamburger.js"></script>
+
+</body>
+
+
+</html>

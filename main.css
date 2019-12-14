@@ -1,0 +1,457 @@
+body {
+    min-width: 300px;
+    margin: 0;
+    height: 100vh;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    /* background: #141414; */
+    background: black;
+    font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.text-img h2 {
+    background-color: rgba(0, 0, 0, 0.356);
+    font-size: 35px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+h3, h5 {
+    margin-bottom: 12px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:link {
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+input:focus, button:focus {
+    outline: 0;
+}
+
+/* Nav BAR AND HEADER */
+
+header {
+    background-color: #0E0F0F;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    max-width: 1080px;
+}
+
+nav a {
+    margin: 0 5px;
+}
+
+.hamburger {
+    display: none;
+    /* display: flex; */
+    width: 30px;
+    height: 30px;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    left: 20px;
+}
+
+.hamburger div {
+    width: 30px;
+    height: 5px;
+    background: #fff;
+}
+
+#hamburger-menu {
+    display: none;
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: space-between;
+    width: 200px;
+    position: absolute;
+    left: 20px;
+    top: 50px;
+    background-color: rgba(255, 255, 255, 0.281);
+}
+
+#hamburger-menu span {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 15px;
+    width: 100px;
+    /* position: absolute; */
+    /* left: 20px;
+    top: 100px; */
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 40px;
+    margin: 0px;
+}
+
+.logo img {
+    height: 40px;
+    position: relative;
+    bottom: 3px;
+}
+
+.log-in img {
+    height: 20px;
+    width: 20px;
+}
+
+/* MAIN CONTAINER */
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+/* TOP SECTION */
+
+.top-section {
+    background-image: url(assets/hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.hero {
+    height: 500px;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgb(0, 0, 0, 1));
+}
+
+.play-icon {
+    display: inline-block;
+    background-image: url("assets/play-button.svg");
+    position: relative;
+    height: 60px;
+    width: 60px;
+    top: 160px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #ff0000;
+    cursor: pointer;
+}
+
+.play-icon:hover svg #play-icon, .play-icon:hover svg #play-icon {
+    fill: #ff0000;
+    stroke: #ff0000;
+    stroke-width: 1;
+}
+
+.text-img {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    bottom: -170px;
+    text-align: center;
+}
+
+.text-img .highlight {
+    background-color: #fd2e2e;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.highlight {
+    background-color: #ca3e47;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+/* MOVIE SECTION */
+
+.movie-section {
+    display: flex;
+    width: 100%;
+    max-width: 1080px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.current-movies, .popular-movies, .upcoming-movies {
+    width: 100%;
+    margin: 40px 0px;
+}
+
+.movie-section-title-row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: -15px;
+    font-size: 20px;
+}
+
+.movie-section-title-row span {
+    margin-bottom: 5px;
+}
+
+/*  MOVIES SECTION - mobile review*/
+
+.glide__slide img {
+    width: 200px;
+    margin-top: 0px;
+    filter: brightness(1);
+    border-radius: 3px;
+}
+
+.glide__slide .details {
+    height: 300px;
+    width: 100%;
+    position: relative;
+    bottom: 304px;
+    margin-bottom: -300px;
+    padding: 20px;
+    display: none;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.glide__slide .details h3 {
+    font-size: 28px;
+}
+
+.glide__slide .details p {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.glide__slide a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.glide__slide a:hover {
+    filter: brightness(0.2);
+}
+
+.glide__slide a:hover .details {
+    display: flex;
+}
+
+.glide__arrow {
+    height: 48px;
+    width: 48px;
+    font-size: 30px;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 50%;
+    border: 0;
+}
+
+.glide__arrow:hover {
+    color: red;
+    border-radius: 50%;
+    background-color: rgba(238, 238, 238, 0.192);
+}
+
+.glide__arrow--left {
+    left: -1.55em;
+}
+
+.glide__arrow--right {
+    right: -1.55em;
+}
+
+.glide__bullets {
+    bottom: -1.2em;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #0E0F0F;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1080px;
+}
+
+.newsletter {
+    display: flex;
+    flex-direction: column;
+}
+
+.newsletter button {
+    align-self: center;
+    margin-top: 0px;
+    width: 110px;
+    box-shadow: inset 0px 1px 0px 0px #ffffff;
+    background: linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+    background-color: #ffffff;
+    border-radius: 6px;
+    border: 1px solid #dcdcdc;
+    display: inline-block;
+    cursor: pointer;
+    color: #666666;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 6px 10px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #ffffff;
+}
+
+.newsletter button:hover {
+    cursor: pointer;
+    background: linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+    background-color: #f6f6f6;
+}
+
+.newsletter button:active {
+    position: relative;
+    top: 1px;
+}
+
+.foo {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+}
+
+.footer-wrapper * {
+    margin: 10px;
+}
+
+.footer-wrapper h5 {
+    font-size: 22px;
+    color: #FFD6D2;
+}
+
+.foo-icon-container {
+    text-align: center;
+}
+
+.email-input {
+    width: 200px;
+    font-size: 15px;
+    padding: 4px;
+}
+
+.euro-cinema {
+    text-align: center;
+}
+
+.euro-cinema img {
+    width: 150px;
+    border-radius: 5px;
+}
+
+.copy-right {
+    text-align: center;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 620px) {
+    .footer-wrapper {
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+    .foo-icon-container {
+        order: 1;
+    }
+}
+
+@media only screen and (max-width: 1140px) {
+    .movie-section, nav, .footer-container {
+        max-width: 900px;
+    }
+    .login-dropdown-content {
+        left: -200px;
+    }
+}
+
+@media only screen and (max-width: 950px) and (min-width: 781px) {
+    .movie-section, nav, .footer-container {
+        max-width: 700px;
+    }
+}
+
+/* @media only screen and (width: 600px) {} */
+
+@media only screen and (max-width: 780px) and (min-width: 581px) {
+    .glide__slide img {
+        width: 240px;
+    }
+    .movie-section, nav, .footer-container {
+        max-width: 500px;
+    }
+}
+
+@media only screen and (max-width: 580px) and (min-width: 1px) {
+    .glide__slide img {
+        width: 240px;
+    }
+    .movie-section, nav {
+        max-width: 350px;
+    }
+    .text-img h2 {
+        font-size: 22px;
+    }
+    .glide__arrow--left {
+        left: 0em;
+    }
+    .glide__arrow--right {
+        right: 0em;
+    }
+}

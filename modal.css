@@ -1,0 +1,40 @@
+.form-popup {
+  color: black;
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+
+.form-container {
+  max-width: 300px;
+  padding: 20px 20px 50px;
+  background-color: white;
+}
+
+#thumb-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.thumb-down:hover svg {
+  fill: rgb(206, 65, 65);
+}
+
+.thumb-up:hover svg {
+  fill: rgb(42, 134, 42);
+}
+
+#thumb-icons button {
+  background-color: none;
+  border: none;
+}
+
+#thanks-message {
+  display: none;
+}
