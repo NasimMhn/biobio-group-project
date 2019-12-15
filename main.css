@@ -459,3 +459,365 @@ footer {
         right: 0em;
     }
 }
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    background-color: rgb(19, 20, 20);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #0e0c0c;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+ul li a {
+    color: white;
+}
+
+.dropdown-content .dropdown-menu .dropdown-submenu {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    float: left;
+}
+
+.dropdown-content a:hover {
+    background-color: black;
+    color: white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: relative;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+body {
+    font-family: Verdana, sans-serif;
+}
+
+.month {
+    padding: 70px 25px;
+    width: 100%;
+    background: #ab5a54;
+    text-align: center;
+}
+
+.month ul {
+    margin: 0;
+    padding: 0;
+}
+
+.month ul li {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.month .prev {
+    float: left;
+    padding-top: 10px;
+}
+
+.month .next {
+    float: right;
+    padding-top: 10px;
+}
+
+.weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color: #ddd;
+}
+
+.weekdays li {
+    display: inline-block;
+    width: 13.6%;
+    color: #666;
+    text-align: center;
+}
+
+.days {
+    padding: 10px 0;
+    background: #eee;
+    margin: 0;
+}
+
+.days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 12px;
+    color: #777;
+}
+
+.days li .active {
+    padding: 5px;
+    background: grey;
+    color: white !important
+}
+
+.box {
+    position: relative;
+    width: 400px;
+    height: 322px;
+    background-color: white;
+}
+
+.sbox1 {
+    position: absolute;
+    width: 41px;
+    height: 39px;
+    left: 25px;
+    top: 30px;
+    background: #313030;
+}
+
+.sbox2 {
+    position: absolute;
+    width: 41px;
+    height: 39px;
+    left: 78px;
+    top: 30px;
+    background: #313030;
+}
+
+.sbox3 {
+    position: absolute;
+    width: 41px;
+    height: 39px;
+    left: 131px;
+    top: 30px;
+    background: #313030;
+}
+
+.sbox4 {
+    position: absolute;
+    width: 41px;
+    height: 39px;
+    left: 184px;
+    top: 30px;
+    background: #313030;
+}
+
+.sbox5 {
+    position: absolute;
+    width: 41px;
+    height: 39px;
+    left: 237px;
+    top: 30px;
+    background: #313030;
+}
+
+.sbox6 {
+    position: absolute;
+    width: 41px;
+    height: 39px;
+    left: 290px;
+    top: 30px;
+    background: #313030;
+}
+
+.sbox7 {
+    position: absolute;
+    width: 41px;
+    height: 39px;
+    left: 25px;
+    top: 90px;
+    background: #313030;
+}
+
+.sbox8 {
+    position: absolute;
+    width: 41px;
+    height: 39px;
+    left: 78px;
+    top: 90px;
+    background: #313030;
+}
+
+.sbox9 {
+    position: absolute;
+    width: 41px;
+    height: 39px;
+    left: 131px;
+    top: 90px;
+    background: #313030;
+}
+
+.sbox10 {
+    position: absolute;
+    width: 41px;
+    height: 39px;
+    left: 184px;
+    top: 90px;
+    background: #313030;
+}
+
+.sbox11 {
+    position: absolute;
+    width: 41px;
+    height: 39px;
+    left: 237px;
+    top: 90px;
+    background: #313030;
+}
+
+.sbox12 {
+    position: absolute;
+    width: 41px;
+    height: 39px;
+    left: 290px;
+    top: 90px;
+    background: #313030;
+}
+
+.sbox13 {
+    position: absolute;
+    width: 41px;
+    height: 39px;
+    left: 25px;
+    top: 150px;
+    background: #313030;
+}
+
+.sbox14 {
+    position: absolute;
+    width: 41px;
+    height: 39px;
+    left: 78px;
+    top: 150px;
+    background: #313030;
+}
+
+.sbox15 {
+    position: absolute;
+    width: 41px;
+    height: 39px;
+    left: 131px;
+    top: 150px;
+    background: #313030;
+}
+
+.sbox16 {
+    position: absolute;
+    width: 41px;
+    height: 39px;
+    left: 184px;
+    top: 150px;
+    background: #313030;
+}
+
+.sbox17 {
+    position: absolute;
+    width: 41px;
+    height: 39px;
+    left: 237px;
+    top: 150px;
+    background: #313030;
+}
+
+.sbox18 {
+    position: absolute;
+    width: 41px;
+    height: 39px;
+    left: 290px;
+    top: 150px;
+    background: #313030;
+}
+
+.sbox19 {
+    position: absolute;
+    width: 41px;
+    height: 39px;
+    left: 25px;
+    top: 210px;
+    background: #313030;
+}
+
+.sbox20 {
+    position: absolute;
+    width: 41px;
+    height: 39px;
+    left: 78px;
+    top: 210px;
+    background: #313030;
+}
+
+.sbox21 {
+    position: absolute;
+    width: 41px;
+    height: 39px;
+    left: 131px;
+    top: 210px;
+    background: #313030;
+}
+
+.sbox22 {
+    position: absolute;
+    width: 41px;
+    height: 39px;
+    left: 184px;
+    top: 210px;
+    background: #313030;
+}
+
+.sbox23 {
+    position: absolute;
+    width: 41px;
+    height: 39px;
+    left: 237px;
+    top: 210px;
+    background: #313030;
+}
+
+.sbox24 {
+    position: absolute;
+    width: 41px;
+    height: 39px;
+    left: 290px;
+    top: 210px;
+    background: #313030;
+}
+
+/* Add media queries for smaller screens */
+
+@media screen and (max-width:720px) {
+    .weekdays li, .days li {
+        width: 13.1%;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .weekdays li, .days li {
+        width: 12.5%;
+    }
+    .days li .active {
+        padding: 2px;
+    }
+}
+
+@media screen and (max-width: 290px) {
+    .weekdays li, .days li {
+        width: 12.2%;
+    }
+}
