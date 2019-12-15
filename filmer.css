@@ -1,0 +1,141 @@
+html {
+  height: 100vh;
+  width: 100%;
+  color: white;
+  background: #121212;
+  font-family: 'Raleway', sans-serif;
+  ;
+}
+
+html, body {
+  color: white;
+  background: #121212;
+  margin: 0;
+  display: -ms-grid;
+  /*-ms-grid måste implenteras för att funka i IE11*/
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: 60px 500px 1fr 1fr;
+  grid-template-areas: "nav nav nav nav" "header header header header" "main main main main" "footer footer footer footer";
+}
+
+/*CSS för alla olika sectioner på sidan*/
+
+/*Först navbar*/
+
+header {
+  display: flex;
+  grid-area: nav;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*Header part, picture to settle the mood*/
+
+.curtain {
+  background-image: url("assets/cinema.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  grid-area: header;
+  height: 100%
+  /*  max-width: 1080px; */
+}
+
+/*Main part for all the content, movies ect.*/
+
+.content {
+  grid-area: main;
+  background: #121212;
+  padding: 10px;
+  max-width: 1080px;
+  display: flex;
+  flex-flow: column wrap;
+  margin: auto auto 60px auto;
+}
+
+/*CSS 'film sektionen',
+movies is a container for the select dropdown
+for positioning*/
+
+.movies {
+  height: 35px;
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+  flex-flow: row wrap;
+}
+
+/*Main content of 'filmer'*/
+
+.custom p {
+  text-align: center;
+}
+
+h2 {
+  text-align: left;
+  margin-left: 15px;
+  margin-bottom: -30px;
+}
+
+.filter-menu {
+  height: 30px;
+  width: 145px;
+  border: 1px solid #d1d1d1;
+  color: white;
+  background: #121212;
+  padding-left: 5px;
+  margin-right: 10px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  font-size: 12px;
+  font-weight: bolder;
+  background-image: url("assets/caret.png");
+  background-repeat: no-repeat;
+  background-position: right 0.7em top 50%;
+  background-size: 0.65em auto, 100%;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.filter-menu>option {
+  font-weight: bolder;
+}
+
+article>div>img {
+  width: 196px;
+  padding: 10px;
+  margin-top: 50px;
+}
+
+article {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  margin-top: 20px;
+}
+
+div>p {
+  text-align: center;
+  max-width: 200px;
+}
+
+footer {
+  grid-area: footer;
+}
+
+.tippy-tooltip {
+  text-align: center;
+  background: #121212;
+}
+
+.e-cinema-container {
+  margin: 15px;
+}

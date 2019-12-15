@@ -381,6 +381,10 @@ footer {
     text-align: center;
 }
 
+.social-media img:hover {
+    cursor: pointer;
+}
+
 .email-input {
     width: 200px;
     font-size: 15px;

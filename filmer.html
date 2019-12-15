@@ -4,21 +4,24 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>BioBio - om oss</title>
+  <title>BioBio - filmer</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Google fonts -->
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,900&display=swap" rel="stylesheet">
 
-  <!-- Bootstrap -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 
   <!--CSS Stylesheets-->
   <link rel="stylesheet" href="main.css">
   <link rel="stylesheet" href="navbar.css">
-  <link rel="stylesheet" href="om_oss.css">
+  <link rel="stylesheet" href="filmer.css">
 
+  <!-- tooltip popup import -->
+  <link rel="stylesheet" href="https://unpkg.com/tippy.js@5/dist/backdrop.css" />
+  <link rel="stylesheet" href="https://unpkg.com/tippy.js@5/animations/scale.css" />
+  <!-- Google api -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -88,7 +91,7 @@
     </div>
     <div id="hamburger-menu">
       <span>
-        <a href="filmer.html">Filmer</a>
+        <a href="film.html">Filmer</a>
       </span>
       <span>
         <a href="#"> Boka </a>
@@ -129,77 +132,133 @@
   </header>
 
   <!-- MAIN CONTENT-->
-  <main>
-    <div class="container">
-      <div class="jumbotron">
-        <div class="row">
-          <div class="rubrik">
-            <h1>Välkommen till BioBio</h1>
-          </div>
-          <div class="container">
-            <hr>
-            <div class="Om_Oss">Bio Rio är en biograf med egen bistro och bar i Hornstull. Rio visar bra film från hela
-              världen och har ett brett utbud för alla intressen och åldrar. Premiärfilmer blandas med liveoperor,
-              filmfrukost, filmklubbar, barnfilm och Sveriges första biobar, biografen har permanent alkoholtillstånd i
-              salongen så du både kan äta och dricka gott till filmen. Bio Rio är en av Stockholms få kvarlevande
-              singelbiografer från 1940-talet. Miljön är unikt bevarad och bidrag har emottagits både från Kung Carl XVI
-              Gustaf och Länsstyrelsen i syfte att restaurera och återskapa biografens orginalskick. Biografen invidges
-              1943 och ritades av Albin Stark. </div>
-            <div class="container_kontakt">
 
-              <div class="row">
-                <div class="col">
+  <div class="curtain">
 
-                  <ul style="list-style-type: none;">
-                    <h2>Adress</h2>
-                    <li>BioBio</li>
-                    <li>BioBioVägen 25</li>
-                    <li>254 31 Stockholm</li>
-                    <li><a href="url">Vägbeskrivning (Google maps)</a></li>
-                  </ul>
-                </div>
-                <div class="col">
-                  <ul style="list-style-type: none;">
-                    <h2>Öppettider</h2>
-                    <li>Måndag 9-18</li>
-                    <li>Tisdag 9-18</li>
-                    <li>Onsdag 9-18</li>
-                    <li>Torsdag 9-18</li>
-                    <li>Fredag 9-18</li>
-                  </ul>
-                </div>
-                <div class="col">
-                  <ul style="list-style-type: none;">
-                    <h2>Kontakta Oss</h2>
-                    <li>Telefon:</li>
-                    <li>08 - 123 123 123</li>
-                    <li>Telefonen är bemannad under bistrons öppettider.</li>
-                    <li>Email: <a href="url">BioBio@gmail.com</a></li>
-                  </ul>
-                </div>
+  </div>
 
-              </div>
-            </div>
-            <div class="container_personal">
-              <div class=row>
-                <h1 class="personalrubrik">Personal</h1>
-              </div>
-
-              <div class="row">
-
-                <div class="col">Patrik Johansson<br>08 - 123 123 123<a href="url"><br>BioBio@gmail.com</a></div>
-                <div class="col">Patrik Johansson<br>08 - 123 123 123<a href="url"><br>BioBio@gmail.com</a></div>
-                <div class="col">Patrik Johansson<br>08 - 123 123 123<a href="url"><br>BioBio@gmail.com</a></div>
-                <div class="col">Patrik Johansson<br>08 - 123 123 123<a href="url"><br>BioBio@gmail.com</a></div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
+  <div class="content">
+    <h2 class="custom">Filmer</h2>
+    <div class="movies">
+      <select class="filter-menu">
+        <!--Filtrera-->
+        <option value="" selected hidden>Filtrera filmer</option>
+        <option value="1">Barn filmer</option>
+        <option value="2">Action</option>
+        <option value="3">Sci-fi</option>
+        <option value="4">Äventyr</option>
+        <option value="5">Skräck</option>
+      </select>
     </div>
-  </main>
-
+    <article>
+      <!--Filmer-->
+      <div>
+        <img class="tooltip" src="assets/jumanji.jpg" alt="jumanji" />
+        <p class="custom">
+          Jumanji<br />
+          Welcome to the jungle
+        </p>
+      </div>
+      <div>
+        <img class="tooltip" src="assets/jumanji.jpg" alt="jumanji" />
+        <p class="custom">
+          Jumanji<br />
+          Welcome to the jungle
+        </p>
+      </div>
+      <div>
+        <img class="tooltip" src="assets/jumanji.jpg" alt="jumanji" />
+        <p class="custom">
+          Jumanji<br />
+          Welcome to the jungle
+        </p>
+      </div>
+      <div>
+        <img class="tooltip" src="assets/jumanji.jpg" alt="jumanji" />
+        <p class="custom">
+          Jumanji<br />
+          Welcome to the jungle
+        </p>
+      </div>
+      <div>
+        <img class="tooltip" src="assets/jumanji.jpg" alt="jumanji" />
+        <p class="custom">
+          Jumanji<br />
+          Welcome to the jungle
+        </p>
+      </div>
+      <div>
+        <img class="tooltip" src="assets/jumanji.jpg" alt="jumanji" />
+        <p class="custom">
+          Jumanji<br />
+          Welcome to the jungle
+        </p>
+      </div>
+      <div>
+        <img class="tooltip" src="assets/jumanji.jpg" alt="jumanji" />
+        <p class="custom">
+          Jumanji<br />
+          Welcome to the jungle
+        </p>
+      </div>
+      <div>
+        <img class="tooltip" src="assets/jumanji.jpg" alt="jumanji" />
+        <p class="custom">
+          Jumanji<br />
+          Welcome to the jungle
+        </p>
+      </div>
+      <div>
+        <img class="tooltip" src="assets/jumanji.jpg" alt="jumanji" />
+        <p class="custom">
+          Jumanji<br />
+          Welcome to the jungle
+        </p>
+      </div>
+      <div>
+        <img class="tooltip" src="assets/jumanji.jpg" alt="jumanji" />
+        <p class="custom">
+          Jumanji<br />
+          Welcome to the jungle
+        </p>
+      </div>
+      <div>
+        <img class="tooltip" src="assets/jumanji.jpg" alt="jumanji" />
+        <p class="custom">
+          Jumanji<br />
+          Welcome to the jungle
+        </p>
+      </div>
+      <div>
+        <img class="tooltip" src="assets/jumanji.jpg" alt="jumanji" />
+        <p class="custom">
+          Jumanji<br />
+          Welcome to the jungle
+        </p>
+      </div>
+      <div>
+        <img class="tooltip" src="assets/jumanji.jpg" alt="jumanji" />
+        <p class="custom">
+          Jumanji<br />
+          Welcome to the jungle
+        </p>
+      </div>
+      <div>
+        <img class="tooltip" src="assets/jumanji.jpg" alt="jumanji" />
+        <p class="custom">
+          Jumanji<br />
+          Welcome to the jungle
+        </p>
+      </div>
+      <div>
+        <img class="tooltip" src="assets/jumanji.jpg" alt="jumanji" />
+        <p class="custom">
+          Jumanji<br />
+          Welcome to the jungle
+        </p>
+      </div>
+    </article>
+  </div>
 
 
   <!-- FOOTER -->
@@ -247,7 +306,24 @@
   <!-- JAVASCRIPTS -->
   <script src="./menu.js"></script>
   <script src="./hamburger.js"></script>
+  <!--Tippy.js tooltip scriptCDN and responsive menu js-->
+  <script src="https://unpkg.com/popper.js@1"></script>
+  <script src="https://unpkg.com/tippy.js@5"></script>
 
+
+  <script>
+    /* tooltip js code */
+    tippy(".tooltip", {
+      content:
+        "Beskrivning: <br> Jumanji handlar om 4 ungdomar som en dag hittar ett tv-spel, som plötsligt hamnar i den spelvärlden.<br><br> <img src='assets/trailer2.jpg' style='width:200px;'>",
+      delay: [50, 0],
+      distance: -250,
+      arrow: true,
+      hideOnClick: true,
+      maxWidth: 230,
+      animation: "scale"
+    });
+  </script>
 </body>
 
 
