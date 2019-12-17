@@ -16,9 +16,9 @@
     <link rel="stylesheet" href="css/glide.theme.min.css">
 
     <!--CSS Stylesheets-->
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="navbar.css">
-    <link rel="stylesheet" href="modal.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/modal.css">
 
 
 
@@ -618,6 +618,7 @@
                 </div>
             </div>
         </section>
+
     </main>
 
     <div id="feedbackForm" class="form-popup">
@@ -724,13 +725,14 @@
                 <div class="copy-right">
                     <span>Blitz Solution AB &#9400; 2019</span>
                 </div>
+                <button id="christmas-btn" onclick="giveMeChristmas()"></button>
             </div>
             <div class="foo">
                 <h5>Kundservice</h5>
                 <span>Logga in</span>
                 <span>Bli medlem</span>
                 <span>FAQ</span>
-                <span>Presentkort</span>
+                <a href="giftcard.html">Presentkort</a>
             </div>
 
         </div>
@@ -738,93 +740,14 @@
     </footer>
 
     <!-- JAVASCRIPTS -->
-    <script src="./menu.js"></script>
-    <script src="./hamburger.js"></script>
-    <script src="./glide.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/hamburger.js"></script>
+    <script src="js/glide.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/snowfall.js"></script>
+    <script src="js/christmas.js"></script>
 
-    <!-- CAROUSEL JAVASCRIPT -->
-    <script>
-
-        // SETTINGS TO CAROUSEL
-        const config = {
-            type: 'carousel',
-            keyboard: true,
-            gap: 20,
-            perView: 5,
-            breakpoints: {
-                1140: {
-                    perView: 4,
-                    gap: 40,
-                },
-                950: {
-                    perView: 3,
-                    gap: 40,
-
-                },
-                780: {
-                    perView: 2,
-                    gap: 40,
-                    peek: {
-                        before: 10,
-                        after: 10
-                    }
-                },
-                580: {
-                    perView: 1,
-                    gap: 100,
-                    peek: {
-                        before: 50,
-                        after: 50
-                    }
-                },
-                360: {
-                    perView: 1,
-                    gap: 1,
-                    peek: {
-                        before: 10,
-                        after: 10
-                    }
-                }
-            },
-
-        }
-
-        // CREATING CAROUSELS WITH SETTINGS
-        const carousels = document.querySelectorAll(".glide");
-
-        let i = 0;
-        Object.values(carousels).map(carousel => {
-
-            new Glide(carousel, config).mount()
-            i = i + 1
-        });
-
-
-    </script>
-
-    <!-- POPUP JAVASCRIPT -->
-    <script>
-
-        setTimeout(function () {
-
-            document.getElementById("feedbackForm").style.display = "block"
-
-        }, 10000);
-
-
-        function openForm() {
-            document.getElementById("customerForm").style.display = "block";
-        }
-
-        function closeForm() {
-            document.getElementById("thumb-icons").style.display = 'none'
-            document.getElementById("thanks-message").style.display = "block"
-
-            setTimeout(function () {
-                document.getElementById("feedbackForm").style.display = "none"
-            }, 2500);
-        }
-    </script>
 
 </body>
 

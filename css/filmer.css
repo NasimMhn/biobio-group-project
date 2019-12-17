@@ -35,7 +35,7 @@ a {
 /*Header part, picture to settle the mood*/
 
 .curtain {
-  background-image: url("assets/cinema.jpg");
+  background-image: url("../assets/cinema.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;

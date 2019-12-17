@@ -4,24 +4,26 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>BioBio - filmer</title>
+  <title>BioBio</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Google fonts -->
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,900&display=swap" rel="stylesheet">
 
+  <!-- Glide Core Stylesheet -->
+  <link rel="stylesheet" href="css/glide.core.min.css">
+  <link rel="stylesheet" href="css/glide.theme.min.css">
 
   <!--CSS Stylesheets-->
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/giftcard.css">
   <link rel="stylesheet" href="css/navbar.css">
-  <link rel="stylesheet" href="css/filmer.css">
+  <link rel="stylesheet" href="css/modal.css">
 
-  <!-- tooltip popup import -->
-  <link rel="stylesheet" href="https://unpkg.com/tippy.js@5/dist/backdrop.css" />
-  <link rel="stylesheet" href="https://unpkg.com/tippy.js@5/animations/scale.css" />
-  <!-- Google api -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+
 </head>
 
 <body>
@@ -163,12 +165,14 @@
         </div>
       </div>
       <a href="om_oss.html"> Om oss </a>
+
       <div class="logo">
         <a href="index.html">
           <img src="assets/popcorn.svg" alt="logo">
           <h1>BioBio</h1>
         </a>
       </div>
+
 
       <div class="city-dropdown">
         <a onclick="dropdownCities()" class="city-dropbtn">Stockholm</a>
@@ -222,7 +226,7 @@
     </div>
     <div id="hamburger-menu">
       <span>
-        <a href="film.html">Filmer</a>
+        <a href="filmer.html">Filmer</a>
       </span>
       <span>
         <a href="#"> Boka </a>
@@ -263,133 +267,21 @@
   </header>
 
   <!-- MAIN CONTENT-->
+  <main>
+    <!-- GIFTCARD SECTION-->
 
-  <div class="curtain">
+    <!-- TOP SECTION-->
+    <section class="top-section">
 
-  </div>
+      <div class="hero">
 
-  <div class="content">
-    <h2 class="custom">Filmer</h2>
-    <div class="movies">
-      <select class="filter-menu">
-        <!--Filtrera-->
-        <option value="" selected hidden>Filtrera filmer</option>
-        <option value="1">Barn filmer</option>
-        <option value="2">Action</option>
-        <option value="3">Sci-fi</option>
-        <option value="4">Äventyr</option>
-        <option value="5">Skräck</option>
-      </select>
-    </div>
-    <article>
-      <!--Filmer-->
-      <div>
-        <img class="tooltip" src="assets/jumanji.jpg" alt="jumanji" />
-        <p class="custom">
-          Jumanji<br />
-          Welcome to the jungle
-        </p>
       </div>
-      <div>
-        <img class="tooltip" src="assets/jumanji.jpg" alt="jumanji" />
-        <p class="custom">
-          Jumanji<br />
-          Welcome to the jungle
-        </p>
-      </div>
-      <div>
-        <img class="tooltip" src="assets/jumanji.jpg" alt="jumanji" />
-        <p class="custom">
-          Jumanji<br />
-          Welcome to the jungle
-        </p>
-      </div>
-      <div>
-        <img class="tooltip" src="assets/jumanji.jpg" alt="jumanji" />
-        <p class="custom">
-          Jumanji<br />
-          Welcome to the jungle
-        </p>
-      </div>
-      <div>
-        <img class="tooltip" src="assets/jumanji.jpg" alt="jumanji" />
-        <p class="custom">
-          Jumanji<br />
-          Welcome to the jungle
-        </p>
-      </div>
-      <div>
-        <img class="tooltip" src="assets/jumanji.jpg" alt="jumanji" />
-        <p class="custom">
-          Jumanji<br />
-          Welcome to the jungle
-        </p>
-      </div>
-      <div>
-        <img class="tooltip" src="assets/jumanji.jpg" alt="jumanji" />
-        <p class="custom">
-          Jumanji<br />
-          Welcome to the jungle
-        </p>
-      </div>
-      <div>
-        <img class="tooltip" src="assets/jumanji.jpg" alt="jumanji" />
-        <p class="custom">
-          Jumanji<br />
-          Welcome to the jungle
-        </p>
-      </div>
-      <div>
-        <img class="tooltip" src="assets/jumanji.jpg" alt="jumanji" />
-        <p class="custom">
-          Jumanji<br />
-          Welcome to the jungle
-        </p>
-      </div>
-      <div>
-        <img class="tooltip" src="assets/jumanji.jpg" alt="jumanji" />
-        <p class="custom">
-          Jumanji<br />
-          Welcome to the jungle
-        </p>
-      </div>
-      <div>
-        <img class="tooltip" src="assets/jumanji.jpg" alt="jumanji" />
-        <p class="custom">
-          Jumanji<br />
-          Welcome to the jungle
-        </p>
-      </div>
-      <div>
-        <img class="tooltip" src="assets/jumanji.jpg" alt="jumanji" />
-        <p class="custom">
-          Jumanji<br />
-          Welcome to the jungle
-        </p>
-      </div>
-      <div>
-        <img class="tooltip" src="assets/jumanji.jpg" alt="jumanji" />
-        <p class="custom">
-          Jumanji<br />
-          Welcome to the jungle
-        </p>
-      </div>
-      <div>
-        <img class="tooltip" src="assets/jumanji.jpg" alt="jumanji" />
-        <p class="custom">
-          Jumanji<br />
-          Welcome to the jungle
-        </p>
-      </div>
-      <div>
-        <img class="tooltip" src="assets/jumanji.jpg" alt="jumanji" />
-        <p class="custom">
-          Jumanji<br />
-          Welcome to the jungle
-        </p>
-      </div>
-    </article>
-  </div>
+
+    </section>
+
+
+  </main>
+
 
 
   <!-- FOOTER -->
@@ -421,7 +313,6 @@
         <div class="copy-right">
           <span>Blitz Solution AB &#9400; 2019</span>
         </div>
-        <button id="christmas-btn" onclick="giveMeChristmas()"></button>
       </div>
       <div class="foo">
         <h5>Kundservice</h5>
@@ -438,26 +329,8 @@
   <!-- JAVASCRIPTS -->
   <script src="js/menu.js"></script>
   <script src="js/hamburger.js"></script>
-  <script src="js/snowfall.js"></script>
-  <script src="js/christmas.js"></script>
-  <!--Tippy.js tooltip scriptCDN and responsive menu js-->
-  <script src="https://unpkg.com/popper.js@1"></script>
-  <script src="https://unpkg.com/tippy.js@5"></script>
+  <!-- <script src="js/snowfall.js"></script> -->
 
-
-  <script>
-    /* tooltip js code */
-    tippy(".tooltip", {
-      content:
-        "Beskrivning: <br> Jumanji handlar om 4 ungdomar som en dag hittar ett tv-spel, som plötsligt hamnar i den spelvärlden.<br><br> <img src='assets/trailer2.jpg' style='width:200px;'>",
-      delay: [50, 0],
-      distance: -250,
-      arrow: true,
-      hideOnClick: true,
-      maxWidth: 230,
-      animation: "scale"
-    });
-  </script>
 </body>
 
 
