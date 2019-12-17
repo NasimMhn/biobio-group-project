@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Presentkort</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,900&display=swap" rel="stylesheet">
+  <!--CSS Stylesheets-->
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="modal.css">
+
+</head>
+
+<body>
+  <!-- HEADER  & NAVBAR -->
+  <header>
+    <!-- NAVBAR (DESKTOP) -->
+    <nav id="main-nav">
+      <a href="filmer.html">Filmer</a>
+      <div class="dropdown">
+        <a href="#" class="dropbtn">Boka</a>
+        <div class="dropdown-content">
+          <ul class="dropdown-menu">
+            <li class="dropdown-submenu"><a href="#">Film</a>
+              <br><br>
+              <select
+                style="width: 150px;height: 30px; border-radius: 10px; background-color: black;border: 1px solid white; color: white; padding-left: 5px;">
+                <option>JUMANJI 2</option>
+                <option>JOKER</option>
+                <option>FROST II</option>
+                <option>STAR WARS: The Rise of Skywalker</option>
+                <option>PARASIT</option>
+                <option>21 BRIDGES</option>
+                <option>Sune:Best Man</option>
+              </select>
+            </li>
+            <li class="dropdown-submenu"><a href="#">Antal</a>
+              <br><br>
+              <select
+                style="width: 50px;height: 30px; border-radius: 10px; background-color: black;border: 1px solid white; color: white; padding-left: 5px;">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+              </select>
+            </li>
+            </li>
+            <li class="dropdown-submenu calender"><a href="#">Välj Datum</a><br><br>
+
+              <div class="month" style="padding: 40px;padding-left: 20px;">
+                <ul>
+                  <li class="prev">&#10094;</li>
+                  <li class="next">&#10095;</li>
+                  <li>
+                    December<br>
+                    <span style="font-size:18px">2019</span>
+                  </li>
+                </ul>
+              </div>
+
+              <ul class="weekdays">
+                <li>Mo</li>
+                <li>Tu</li>
+                <li>We</li>
+                <li>Th</li>
+                <li>Fr</li>
+                <li>Sa</li>
+                <li>Su</li>
+              </ul>
+
+              <ul class="days">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+                <li>10</li>
+                <li>11</li>
+                <li>12</li>
+                <li>13</li>
+                <li>14</li>
+                <li>15</li>
+                <li>16</li>
+                <li>17</li>
+                <li>18</li>
+                <li><span class="active">19</span></li>
+                <li>20</li>
+                <li><span class="active">21</span</li> <li>22</li>
+                <li><span class="active">23</span></li>
+                <li><span class="active">24</span></li>
+                <li>25</li>
+                <li><span class="active">26</span></li>
+                <li>27</li>
+                <li>28</li>
+                <li><span class="active">29</span></li>
+                <li>30</li>
+                <li><span class="active">31</span></li>
+              </ul>
+            </li>
+            </li>
+
+
+
+            <li class="dropdown-submenu"><a href="#">Välj Plats</a><br><br>
+              <div class="box">
+                <div class="sbox1"></div>
+                <div class="sbox2"></div>
+                <div class="sbox3"></div>
+                <div class="sbox4"></div>
+                <div class="sbox5"></div>
+                <div class="sbox6"></div>
+                <div class="sbox7"></div>
+                <div class="sbox8"></div>
+                <div class="sbox9"></div>
+                <div class="sbox10"></div>
+                <div class="sbox11"></div>
+                <div class="sbox12"></div>
+                <div class="sbox13"></div>
+                <div class="sbox14"></div>
+                <div class="sbox15"></div>
+                <div class="sbox16"></div>
+                <div class="sbox17"></div>
+                <div class="sbox18"></div>
+                <div class="sbox19"></div>
+                <div class="sbox20"></div>
+                <div class="sbox21"></div>
+                <div class="sbox22"></div>
+                <div class="sbox23"></div>
+                <div class="sbox24"></div>
+              </div>
+            </li>
+          </ul>
+          <br><br><br><br>
+          <div style="width: 50px; height:10px; display: flex; justify-content: flex-end;">
+
+            <!--<button style="background-color: black; color: black; display: hidden;"></button>-->
+          </div>
+
+          <div>
+            <button type="button"
+              style="margin-left: auto; margin-right: auto;  display: flex; text-align: center; justify-content: center; width: 350px; height: 25px; margin-bottom: 2px; background-color: #ab5a54;color: white;border-radius: 10px; border: none;"><strong>Boka</strong></button>
+          </div>
+
+        </div>
+      </div>
+      <a href="om_oss.html"> Om oss </a>
+
+      <div class="logo">
+        <a href="index.html">
+          <img src="assets/popcorn.svg" alt="logo">
+          <h1>BioBio</h1>
+        </a>
+      </div>
+
+
+      <div class="city-dropdown">
+        <a onclick="dropdownCities()" class="city-dropbtn">Stockholm</a>
+        <div id="myCityDropdown" class="city-dropdown-content">
+          <a href="#">Göteborg</a>
+          <a href="#">Malmö</a>
+          <a href="#">Uppsala</a>
+        </div>
+      </div>
+
+      <div class="log-in">
+        <div class="login-dropdown">
+          <a onclick="dropdownLogin()" class="login-dropbtn">
+            <img src="assets/account.svg" alt="logga in">
+            Logga in
+          </a>
+          <div id="myLoginDropdown" class="login-dropdown-content">
+            <div class="login-box">
+              <input type="text" placeholder="E-post" />
+              <input type="text" placeholder="Lösenord" />
+              <a href="#"><span>Glömt lösenord?</span></a>
+              <button class="login-btn"> Logga in </button>
+              <div class="form-bottom">
+                <p style="font-size: 17px; color: #333;">Inget konto? </p>
+                <a href="#">
+                  <p style="color: #ff0000; font-size: 15px;">Bli medlem</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Search icon -->
+      <div class="search-box">
+        <svg onClick="openSearch()" width="25" height="25" viewBox="0 0 42 40" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path id="search-btn"
+            d="M41.2571 36.5725L31.2156 27.108C33.7047 24.2478 35.2049 20.5841 35.2049 16.591C35.2049 7.43181 27.32 0 17.6025 0C7.87636 0 0 7.43181 0 16.591C0 25.7502 7.87636 33.182 17.6025 33.182C21.839 33.182 25.7175 31.776 28.7521 29.43L38.7936 38.8865C39.4755 39.5292 40.5752 39.5292 41.2571 38.8865C41.939 38.2517 41.939 37.2073 41.2571 36.5725ZM17.6025 29.8799C9.81987 29.8799 3.49492 23.9184 3.49492 16.591C3.49492 9.26365 9.81987 3.2941 17.6025 3.2941C25.3765 3.2941 31.71 9.26365 31.71 16.591C31.71 23.9184 25.3765 29.8799 17.6025 29.8799Z"
+            fill="#fff" />
+        </svg>
+      </div>
+    </nav>
+
+
+    <!-- HAMBURGER (MOBILE) -->
+    <div id="hamburger" onClick="openHamburger()" class="hamburger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div id="hamburger-menu">
+      <span>
+        <a href="filmer.html">Filmer</a>
+      </span>
+      <span>
+        <a href="#"> Boka </a>
+      </span>
+      <span>
+        <a href="om_oss.html"> Om oss </a>
+      </span>
+      <span>
+        <a href="#"> Logga in </a>
+      </span>
+      <span>
+        <a href="#"> Biografer</a>
+      </span>
+      <span>
+        <a href="#">Nyheter</a>
+      </span>
+      <span>
+        <a href="#">Medlemskap</a>
+      </span>
+      <span>
+        <a href="#">Event</a>
+      </span>
+    </div>
+
+    <!-- SEARCH BAR -->
+    <nav id="search-nav">
+      <div class="src-icon">
+        <svg onClick="searchClick()" width="25" height="25" viewBox="0 0 42 40" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M41.2571 36.5725L31.2156 27.108C33.7047 24.2478 35.2049 20.5841 35.2049 16.591C35.2049 7.43181 27.32 0 17.6025 0C7.87636 0 0 7.43181 0 16.591C0 25.7502 7.87636 33.182 17.6025 33.182C21.839 33.182 25.7175 31.776 28.7521 29.43L38.7936 38.8865C39.4755 39.5292 40.5752 39.5292 41.2571 38.8865C41.939 38.2517 41.939 37.2073 41.2571 36.5725ZM17.6025 29.8799C9.81987 29.8799 3.49492 23.9184 3.49492 16.591C3.49492 9.26365 9.81987 3.2941 17.6025 3.2941C25.3765 3.2941 31.71 9.26365 31.71 16.591C31.71 23.9184 25.3765 29.8799 17.6025 29.8799Z"
+            fill="#fff" />
+        </svg>
+      </div>
+      <input id="search-input" type="text" placeholder="Sök på filmer, genres etc. " />
+      <button class="close-btn" onClick="closeSearch()">&#10005; </button>
+    </nav>
+  </header>
+
+  <!-- MAIN CONTENT-->
+  <main>
+    <!-- TOP SECTION-->
+    <section class="top-section">
+
+      <div class="hero">
+        <span class="play-icon">
+          <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve">
+            <g>
+              <path id="play-icon" fill="#ffffff"
+                d="M45.563,29.174l-22-15c-0.307-0.208-0.703-0.231-1.031-0.058C22.205,14.289,22,14.629,22,15v30
+                            c0,0.371,0.205,0.711,0.533,0.884C22.679,45.962,22.84,46,23,46c0.197,0,0.394-0.059,0.563-0.174l22-15
+                            C45.836,30.64,46,30.331,46,30S45.836,29.36,45.563,29.174z M24,43.107V16.893L43.225,30L24,43.107z" />
+              <path id="play-icon" fill="#ffffff" d="M30,0C13.458,0,0,13.458,0,30s13.458,30,30,30s30-13.458,30-30S46.542,0,30,0z M30,58C14.561,58,2,45.439,2,30
+                            S14.561,2,30,2s28,12.561,28,28S45.439,58,30,58z" />
+            </g>
+          </svg>
+        </span>
+
+        <div class="text-img">
+          <h2>Uppe på vallmokullen - Klassiker</h2>
+          <span class="highlight">Premiär 20 december</span>
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <!-- MOVIE SECTION-->
+    <section class="movie-section">
+
+      <!-- AKTUELLA FILMER CONTAINER-->
+      <div class="current-movies">
+        <div class="movie-section-title-row">
+          <h3>Aktuella filmer</h3>
+          <a href="#">
+            <h5> Visa alla <span style="font-size:small">❯</span></h5>
+          </a>
+        </div>
+        <div class="glide">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <li class="glide__slide">
+                <a href="#">
+                  <img src="assets/aktuell-film-1.jpg">
+                  <div class="details">
+                    <h3>Frost 2</h3>
+                    <p>Premiär 25 december</p>
+                  </div>
+                </a>
+              </li>
+              <li class="glide__slide">
+                <a href="#">
+                  <img src="assets/aktuell-film-2.jpg"><br />
+                  <div class="details">
+                    <h3> Star Wars: The Rise of Skywalker</h3>
+                    <p>Premiär 18 december</p>
+                  </div>
+                </a>
+              </li>
+              <li class="glide__slide">
+                <a href="#">
+                  <img src="assets/aktuell-film-3.jpg"><br />
+                  <div class="details">
+                    <h3> Sune - Best Man </h3>
+                    <p>Premiär 20 december</p>
+                  </div>
+                </a>
+              </li>
+              <li class="glide__slide">
+                <a href="#">
+                  <img src="assets/aktuell-film-4.jpg"><br />
+                  <div class="details">
+                    <h3> Parasit </h3>
+                    <p>Premiär 20 december</p>
+                  </div>
+                </a>
+              </li>
+              <li class="glide__slide">
+                <a href="#">
+                  <img src="assets/aktuell-film-5.jpg"><br />
+                  <div class="details">
+                    <h3> Bamse och dunderklockan </h3>
+                    <p>Premiär 21 december</p>
+                  </div>
+                </a>
+              </li>
+              <li class="glide__slide">
+                <a href="#">
+                  <img src="assets/aktuell-film-6.jpg"><br />
+                  <div class="details">
+                    <h3> Hustlers</h3>
+                    <p>Premiär 2 december</p>
+                  </div>
+                </a>
+              </li>
+              <li class="glide__slide">
+                <a href="#">
+                  <img src="assets/movie7.jpg"><br />
+                  <div class="details">
+                    <h3> Aladdin </h3>
+                    <p>Premiär 10 november</p>
+                  </div>
+                </a>
+              </li>
+              <li class="glide__slide">
+                <a href="#">
+                  <img src="assets/aktuell-film-8.jpg"><br />
+                  <div class="details">
+                    <h3> En del av mitt hjärta</h3>
+                    <p>Premiär 25 december</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">❮</button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">❯</button>
+          </div>
+          <div class="glide__bullets" data-glide-el="controls[nav]">
+            <button class="glide__bullet" data-glide-dir="=0"></button>
+            <button class="glide__bullet" data-glide-dir="=1"></button>
+            <button class="glide__bullet" data-glide-dir="=2"></button>
+            <button class="glide__bullet" data-glide-dir="=3"></button>
+            <button class="glide__bullet" data-glide-dir="=4"></button>
+            <button class="glide__bullet" data-glide-dir="=5"></button>
+            <button class="glide__bullet" data-glide-dir="=6"></button>
+            <button class="glide__bullet" data-glide-dir="=7"></button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- POPULARA FILMER CONTAINER -->
+      <div class="popular-movies">
+        <div class="movie-section-title-row">
+          <h3>Populära filmer</h3>
+          <a href="#">
+            <h5> Visa alla <span style="font-size:small">❯</span></h5>
+          </a>
+        </div>
+        <div class="glide">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <li class="glide__slide">
+                <a href="#">
+                  <img src="assets/popular-film-1.jpg"><br />
+                  <div class="details">
+                    <h3> 21 Bridges </h3>
+                    <p>Action, Thriller</p>
+                  </div>
+                </a>
+              </li>
+              <li class="glide__slide">
+                <a href="#">
+                  <img src="assets/movie6.jpg"><br />
+                  <div class="details">
+                    <h3> Ad Astra </h3>
+                    <p>Sci-fi, Drama, Thriller</p>
+                  </div>
+                </a>
+              </li>
+              <li class="glide__slide">
+                <a href="https://www.imdb.com/title/tt6141246/">
+                  <img src="assets/movie3.jpg"><br />
+                  <div class="details">
+                    <h3> Om Det Oändliga </h3>
+                    <p>Drama</p>
+                  </div>
+                </a>
+              </li>
+              <li class="glide__slide">
+                <a href="#">
+                  <img src="assets/movie4.jpg"><br />
+                  <div class="details">
+                    <h3> Joker </h3>
+                    <p>Drama, Thriller</p>
+                  </div>
+                </a>
+              </li>
+              <li class="glide__slide">
+                <a href="#">
+                  <img src="assets/movie5.jpg"><br />
+                  <div class="details">
+                    <h3> Hasse & Tage</h3>
+                    <p>Dokumentär</p>
+                  </div>
+                </a>
+              </li>
+              <li class="glide__slide">
+                <a href="#">
+                  <img src="assets/popular-film-6.jpg"><br />
+                  <div class="details">
+                    <h3> After the Wedding</h3>
+                    <p>Drama</p>
+                  </div>
+                </a>
+              </li>
+              <li class="glide__slide">
+                <a href="https://www.imdb.com/title/tt6141246/">
+                  <img src="assets/popular-film-7.jpg"><br />
+                  <div class="details">
+                    <h3> 7 Kogustaki Mucize</h3>
+                    <p>Drama</p>
+                  </div>
+                </a>
+              </li>
+              <li class="glide__slide">
+                <a href="#">
+                  <img src="assets/popular-film-8.jpg"><br />
+                  <div class="details">
+                    <h3> Black Christmas</h3>
+                    <p>Skräck, Thriller</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">❮</button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">❯</button>
+          </div>
+          <div class="glide__bullets" data-glide-el="controls[nav]">
+            <button class="glide__bullet" data-glide-dir="=0"></button>
+            <button class="glide__bullet" data-glide-dir="=1"></button>
+            <button class="glide__bullet" data-glide-dir="=2"></button>
+            <button class="glide__bullet" data-glide-dir="=3"></button>
+            <button class="glide__bullet" data-glide-dir="=4"></button>
+            <button class="glide__bullet" data-glide-dir="=5"></button>
+            <button class="glide__bullet" data-glide-dir="=6"></button>
+            <button class="glide__bullet" data-glide-dir="=7"></button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- KOMMANDE FILMER CONTAINER -->
+      <div class="upcoming-movies">
+        <div class="movie-section-title-row">
+          <h3>Kommande filmer</h3>
+          <a href="#">
+            <h5> Visa alla <span style="font-size:small">❯</span></h5>
+          </a>
+        </div>
+        <div class="glide">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <li class="glide__slide">
+                <a href="#">
+                  <img src="assets/kommande-film-1.jpg"><br />
+                  <div class="details">
+                    <h3> Nyckeln till frihet - Klassiker</h3>
+                    <p>Drama</p>
+                    <p>Premiär 7 januari</p>
+                  </div>
+                </a>
+              </li>
+              <li class="glide__slide">
+                <a href="#">
+                  <img src="assets/kommande-film-2.jpg"><br />
+                  <div class="details">
+                    <h3> Bad Boys for life</h3>
+                    <p>Action, Komedi</p>
+                    <p>Premiär 17 januari</p>
+                  </div>
+                </a>
+              </li>
+              <li class="glide__slide">
+                <a href="#">
+                  <img src="assets/kommande-film-3.jpg"><br />
+                  <div class="details">
+                    <h3>The Farewell</h3>
+                    <p>Komedi, Drama</p>
+                    <p>Premiär 10 januari</p>
+                  </div>
+                </a>
+              </li>
+              <li class="glide__slide">
+                <a href="#">
+                  <img src="assets/kommande-film-4.jpg"><br />
+                  <div class="details">
+                    <h3>Jojo Rabbit</h3>
+                    <p>Komedi, Drama</p>
+                    <p>Premiär 10 januari</p>
+                  </div>
+                </a>
+              </li>
+              <li class="glide__slide">
+                <a href="https://www.imdb.com/title/tt6141246/">
+                  <img src="assets/kommande-film-5.jpg"><br />
+                  <div class="details">
+                    <h3>Unga kvinnor</h3>
+                    <p>Drama, Romantik</p>
+                    <p>Premiär 24 januari</p>
+                  </div>
+                </a>
+              </li>
+              <li class="glide__slide">
+                <a href="https://www.imdb.com/title/tt6141246/">
+                  <img src="assets/kommande-film-6.jpg"><br />
+                  <div class="details">
+                    <h3>Cats</h3>
+                    <p>Musikal</p>
+                    <p>Premiär 17 januari</p>
+                  </div>
+                </a>
+              </li>
+              <li class="glide__slide">
+                <a href="https://www.imdb.com/title/tt6141246/">
+                  <img src="assets/kommande-film-7.jpg"><br />
+                  <div class="details">
+                    <h3>Spies in disguise</h3>
+                    <p>Musikal</p>
+                    <p>Premiär 31 januari</p>
+                  </div>
+                </a>
+              </li>
+              <li class="glide__slide">
+                <a href="#">
+                  <img src="assets/popular-film-9.jpg"><br />
+                  <div class="details">
+                    <h3>A Hidden Life</h3>
+                    <p>Biografi, Drama, Krig</p>
+                    <p>Premiär 31 januari</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">❮</button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">❯</button>
+          </div>
+          <div class="glide__bullets" data-glide-el="controls[nav]">
+            <button class="glide__bullet" data-glide-dir="=0"></button>
+            <button class="glide__bullet" data-glide-dir="=1"></button>
+            <button class="glide__bullet" data-glide-dir="=2"></button>
+            <button class="glide__bullet" data-glide-dir="=3"></button>
+            <button class="glide__bullet" data-glide-dir="=4"></button>
+            <button class="glide__bullet" data-glide-dir="=5"></button>
+            <button class="glide__bullet" data-glide-dir="=6"></button>
+            <button class="glide__bullet" data-glide-dir="=7"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="feedbackForm" class="form-popup">
+    <div class="form-container">
+
+      <p>Vad tycker du om vår nya hemsida?</p>
+      <div id="thumb-icons">
+        <button class="thumb-up" onClick="closeForm()">
+          <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px" y="0px" width="50px" height="50px" viewBox="0 0 456.814 456.814"
+            style="enable-background:new 0 0 456.814 456.814;" xml:space="preserve">
+
+            <path
+              d="M441.11,252.677c10.468-11.99,15.704-26.169,15.704-42.54c0-14.846-5.432-27.692-16.259-38.547
+                           c-10.849-10.854-23.695-16.278-38.541-16.278h-79.082c0.76-2.664,1.522-4.948,2.282-6.851c0.753-1.903,1.811-3.999,3.138-6.283
+                           c1.328-2.285,2.283-3.999,2.852-5.139c3.425-6.468,6.047-11.801,7.857-15.985c1.807-4.192,3.606-9.9,5.42-17.133
+                           c1.811-7.229,2.711-14.465,2.711-21.698c0-4.566-0.055-8.281-0.145-11.134c-0.089-2.855-0.574-7.139-1.423-12.85
+                           c-0.862-5.708-2.006-10.467-3.43-14.272c-1.43-3.806-3.716-8.092-6.851-12.847c-3.142-4.764-6.947-8.613-11.424-11.565
+                           c-4.476-2.95-10.184-5.424-17.131-7.421c-6.954-1.999-14.801-2.998-23.562-2.998c-4.948,0-9.227,1.809-12.847,5.426
+                           c-3.806,3.806-7.047,8.564-9.709,14.272c-2.666,5.711-4.523,10.66-5.571,14.849c-1.047,4.187-2.238,9.994-3.565,17.415
+                           c-1.719,7.998-2.998,13.752-3.86,17.273c-0.855,3.521-2.525,8.136-4.997,13.845c-2.477,5.713-5.424,10.278-8.851,13.706
+                           c-6.28,6.28-15.891,17.701-28.837,34.259c-9.329,12.18-18.94,23.695-28.837,34.545c-9.899,10.852-17.131,16.466-21.698,16.847
+                           c-4.755,0.38-8.848,2.331-12.275,5.854c-3.427,3.521-5.14,7.662-5.14,12.419v183.01c0,4.949,1.807,9.182,5.424,12.703
+                           c3.615,3.525,7.898,5.38,12.847,5.571c6.661,0.191,21.698,4.374,45.111,12.566c14.654,4.941,26.12,8.706,34.4,11.272
+                           c8.278,2.566,19.849,5.328,34.684,8.282c14.849,2.949,28.551,4.428,41.11,4.428h4.855h21.7h10.276
+                           c25.321-0.38,44.061-7.806,56.247-22.268c11.036-13.135,15.697-30.361,13.99-51.679c7.422-7.042,12.565-15.984,15.416-26.836
+                           c3.231-11.604,3.231-22.74,0-33.397c8.754-11.611,12.847-24.649,12.272-39.115C445.395,268.286,443.971,261.055,441.11,252.677z" />
+            <path d="M100.5,191.864H18.276c-4.952,0-9.235,1.809-12.851,5.426C1.809,200.905,0,205.188,0,210.137v182.732
+                           c0,4.942,1.809,9.227,5.426,12.847c3.619,3.611,7.902,5.421,12.851,5.421H100.5c4.948,0,9.229-1.81,12.847-5.421
+                           c3.616-3.62,5.424-7.904,5.424-12.847V210.137c0-4.949-1.809-9.231-5.424-12.847C109.73,193.672,105.449,191.864,100.5,191.864z
+                               M67.665,369.308c-3.616,3.521-7.898,5.281-12.847,5.281c-5.14,0-9.471-1.76-12.99-5.281c-3.521-3.521-5.281-7.85-5.281-12.99
+                           c0-4.948,1.759-9.232,5.281-12.847c3.52-3.617,7.85-5.428,12.99-5.428c4.949,0,9.231,1.811,12.847,5.428
+                           c3.617,3.614,5.426,7.898,5.426,12.847C73.091,361.458,71.286,365.786,67.665,369.308z" />
+
+          </svg>
+        </button>
+        <button class="thumb-down" onClick="closeForm()">
+          <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px" y="0px" width="50px" height="50px" viewBox="0 0 456.824 456.824"
+            style="enable-background:new 0 0 456.824 456.824;" xml:space="preserve">
+
+
+            <path d="M100.5,45.683H18.276c-4.949,0-9.231,1.809-12.851,5.426C1.809,54.724,0,59.007,0,63.954v182.729
+                        c0,4.948,1.809,9.233,5.426,12.847c3.616,3.614,7.898,5.425,12.851,5.425H100.5c4.948,0,9.229-1.811,12.847-5.425
+                        c3.616-3.613,5.424-7.898,5.424-12.847V63.954c0-4.947-1.809-9.229-5.424-12.845C109.73,47.491,105.449,45.683,100.5,45.683z
+                            M67.665,113.351c-3.616,3.617-7.898,5.424-12.847,5.424c-5.14,0-9.471-1.807-12.99-5.424c-3.521-3.617-5.281-7.898-5.281-12.85
+                        c0-5.137,1.759-9.469,5.281-12.991c3.52-3.521,7.85-5.28,12.99-5.28c4.949,0,9.231,1.759,12.847,5.28
+                        c3.621,3.521,5.426,7.854,5.426,12.991C73.091,105.449,71.282,109.73,67.665,113.351z" />
+
+            <path d="M441.106,204.141c2.861-8.376,4.281-15.608,4.261-21.693c0.575-14.466-3.519-27.504-12.279-39.114
+                        c3.237-10.66,3.237-21.797,0-33.407c-2.847-10.85-7.994-19.792-15.413-26.835c1.711-21.32-2.95-38.543-13.99-51.678
+                        c-12.183-14.465-30.929-21.892-56.246-22.27h-10.28h-21.696h-4.853c-12.56,0-26.269,1.475-41.114,4.425
+                        c-14.838,2.952-26.405,5.713-34.68,8.282c-8.28,2.568-19.75,6.328-34.403,11.276c-23.413,8.183-38.45,12.371-45.111,12.56
+                        c-4.949,0.193-9.231,2.046-12.847,5.569c-3.617,3.518-5.426,7.755-5.426,12.703V246.97c0,4.757,1.718,8.898,5.142,12.416
+                        c3.424,3.524,7.517,5.476,12.275,5.858c4.565,0.384,11.799,5.996,21.698,16.844c9.9,10.849,19.511,22.368,28.836,34.551
+                        c12.944,16.553,22.558,27.973,28.837,34.256c3.424,3.422,6.37,7.99,8.848,13.702c2.472,5.708,4.142,10.324,5.004,13.846
+                        c0.855,3.519,2.135,9.274,3.856,17.275c1.328,7.419,2.519,13.227,3.569,17.412c1.047,4.188,2.898,9.137,5.564,14.845
+                        c2.67,5.716,5.903,10.469,9.712,14.274c3.614,3.62,7.898,5.431,12.847,5.431c8.761,0,16.604-0.999,23.559-2.998
+                        c6.947-1.998,12.655-4.469,17.131-7.419c4.477-2.957,8.282-6.803,11.424-11.566c3.142-4.757,5.424-9.042,6.851-12.848
+                        c1.431-3.812,2.574-8.562,3.426-14.27c0.855-5.716,1.338-10,1.431-12.854c0.093-2.854,0.144-6.563,0.144-11.136
+                        c0-7.228-0.948-14.51-2.851-21.84c-1.909-7.323-3.72-12.895-5.428-16.707c-1.711-3.806-4.281-9.227-7.706-16.269
+                        c-0.575-1.144-1.523-2.861-2.854-5.144c-1.328-2.283-2.382-4.381-3.142-6.283c-0.763-1.902-1.522-4.186-2.279-6.852h79.086
+                        c14.843,0,27.645-5.428,38.397-16.279c10.756-10.848,16.228-23.694,16.419-38.54C456.811,229.931,451.575,215.75,441.106,204.141z
+                        " />
+          </svg>
+        </button>
+      </div>
+
+      <div id="thanks-message">
+        <h2> Tack för din feedback! </h2>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-wrapper">
+      <div class="foo">
+        <h5>BioBio</h5>
+        <span>Kontakta oss</span>
+        <span>Biljetter</span>
+        <span>Filmer & trailers</span>
+        <span>Nyheter</span>
+      </div>
+      <div class="foo-icon-container">
+        <div class="social-media">
+          <img src="assets/facebook.svg" style="height: 50px; width: 50px;">
+          <img src="assets/instagram.svg" style="height: 50px; width: 50px;">
+          <img src="assets/whatsapp.svg" style="height: 50px; width: 50px;">
+        </div>
+        <div class="newsletter">
+          <span style="margin-bottom: 0px; color:#FFD6D2;">Nyhetsbrev</span>
+          <input class="email-input" placeholder="email@adress.com" type="email">
+          <button> Registrera </button>
+        </div>
+        <div class="euro-cinema">
+          <a href="https://www.europa-cinemas.org/en">
+            <img src="assets/europa-cinema.jpg">
+          </a>
+        </div>
+        <div class="copy-right">
+          <span>Blitz Solution AB &#9400; 2019</span>
+        </div>
+      </div>
+      <div class="foo">
+        <h5>Kundservice</h5>
+        <span>Logga in</span>
+        <span>Bli medlem</span>
+        <span>FAQ</span>
+        <span>Presentkort</span>
+      </div>
+
+    </div>
+
+  </footer>
+
+  <!-- JAVASCRIPTS -->
+  <script src="./menu.js"></script>
+  <script src="./hamburger.js"></script>
+  <script src="./glide.js"></script>
+
+  <!-- CAROUSEL JAVASCRIPT -->
+  <script>
+
+    // SETTINGS TO CAROUSEL
+    const config = {
+      type: 'carousel',
+      keyboard: true,
+      gap: 20,
+      perView: 5,
+      breakpoints: {
+        1140: {
+          perView: 4,
+          gap: 40,
+        },
+        950: {
+          perView: 3,
+          gap: 40,
+
+        },
+        780: {
+          perView: 2,
+          gap: 40,
+          peek: {
+            before: 10,
+            after: 10
+          }
+        },
+        580: {
+          perView: 1,
+          gap: 100,
+          peek: {
+            before: 50,
+            after: 50
+          }
+        },
+        360: {
+          perView: 1,
+          gap: 1,
+          peek: {
+            before: 10,
+            after: 10
+          }
+        }
+      },
+
+    }
+
+    // CREATING CAROUSELS WITH SETTINGS
+    const carousels = document.querySelectorAll(".glide");
+
+    let i = 0;
+    Object.values(carousels).map(carousel => {
+
+      new Glide(carousel, config).mount()
+      i = i + 1
+    });
+
+
+  </script>
+
+  <!-- POPUP JAVASCRIPT -->
+  <script>
+
+    setTimeout(function () {
+
+      document.getElementById("feedbackForm").style.display = "block"
+
+    }, 10000);
+
+
+    function openForm() {
+      document.getElementById("customerForm").style.display = "block";
+    }
+
+    function closeForm() {
+      document.getElementById("thumb-icons").style.display = 'none'
+      document.getElementById("thanks-message").style.display = "block"
+
+      setTimeout(function () {
+        document.getElementById("feedbackForm").style.display = "none"
+      }, 2500);
+    }
+  </script>
+
+</body>
+
+
+</html>
